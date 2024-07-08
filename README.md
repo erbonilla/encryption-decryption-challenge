@@ -19,3 +19,5 @@
 - Add Logo to index.html
 
 - Update text
+
+- Create style.css
