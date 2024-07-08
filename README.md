@@ -13,3 +13,5 @@
 - Add Text h1, h2, p
 
 - Create assets folder
+
+- Save Alura logo into assets folder
