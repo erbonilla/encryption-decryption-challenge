@@ -11,3 +11,5 @@
 - Clone repository locally OneDrive
 
 - Add Text h1, h2, p
+
+- Create assets folder
