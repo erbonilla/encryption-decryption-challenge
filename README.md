@@ -21,3 +21,5 @@
 - Update text
 
 - Create style.css
+
+- Update and link style.css
