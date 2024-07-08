@@ -17,3 +17,5 @@
 - Save Alura logo into assets folder
 
 - Add Logo to index.html
+
+- Update text
