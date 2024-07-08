@@ -9,3 +9,5 @@
 - Add collaborator "pablodanielbonilla@gmail.com"
 
 - Clone repository locally OneDrive
+
+- Add Text h1, h2, p
