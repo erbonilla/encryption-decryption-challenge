@@ -25,3 +25,5 @@
 - Update and link style.css
 
 - Added image to assets folder 
+
+- Update style.css 
