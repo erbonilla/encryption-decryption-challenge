@@ -29,3 +29,5 @@
 - Update style.css 
 
 - Update index.html
+
+- Update rename in index.html

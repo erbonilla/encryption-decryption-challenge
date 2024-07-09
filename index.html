@@ -7,24 +7,26 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header></header>
     
-    <main class="presentation">
-        <section class="presentation__content">
-        <h1 class="presentation__content__title">Encryption & Decryption Challenge</h1>
-        <h2>Insert text here</h2>
-        <p class="presentation__content__text">Only lower case without accents</p>
-
-        <div class="presentation__button">
-            <p class="presentation__button__blue">Encryption</p>
-            <p class="presentation__button__white">Decryption</p>
+    <div class="container">
+        <div class="input-section">
+            <div class="header">
+                <img src="logo.png" alt="logo" class="logo">
+            </div>
+            <h1>Insert text here</h1>
+            <textarea id="inputText" placeholder="Insert text here"></textarea>
+            <div class="buttons">
+                <button id="encryptBtn">Encryption</button>
+                <button id="decryptBtn">Decryption</button>
+            </div>
+            <p class="note">Only lower case letters without accents</p>
         </div>
-
-        <img src="assets/AluraLogo.png" alt="Logo Alura">
-        </section>
-    </main>
-   
-    <footer></footer>
-    
+        <div class="output-section">
+            <p>No message found</p>
+            <p>Insert text here for encryption or decryption.</p>
+        </div>
+        <img src="assets/Muñeco.png" alt="Magnify Glass Image" class="output-image">
+        </div>
+    </div>
 </body>
 </html>
