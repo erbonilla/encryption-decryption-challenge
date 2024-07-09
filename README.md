@@ -27,3 +27,5 @@
 - Added image to assets folder 
 
 - Update style.css 
+
+- Update index.html
