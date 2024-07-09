@@ -31,3 +31,5 @@
 - Update index.html
 
 - Update rename in index.html
+
+- Update style.css flexbox
