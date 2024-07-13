@@ -39,7 +39,7 @@ main {
 .message {
     height: 630px;
     background: white;
-    background-image: url(/assets/Muñeco.png);
+    background-image: url("/assets/Muñeco.png");
     background-repeat: no-repeat;
     background-position: center;
     border: none;
