@@ -10,7 +10,7 @@
 .logo{
     padding-top: 10px;
     margin-left: 10px;
-    width: 10%;
+    width: 8%;
 }
 
 main {
@@ -62,6 +62,7 @@ main {
 .buttons{
     display: flex;
     margin-top: 18px;
+    margin-bottom: 18px;
 }
 
 .encryptionBtn {
