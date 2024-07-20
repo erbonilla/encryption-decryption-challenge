@@ -37,3 +37,5 @@
 - Updated index.html / style.css
 
 - Include exclamation icon unto assets folder
+
+- Flexbox updates
