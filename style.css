@@ -1,6 +1,23 @@
+/* -----------------------
+Fonts 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+----------------------- */ 
+
+/* -----------------------
+Global CSS 
+----------------------- */ 
+
+:root{
+    --Dark-blue-dark-blue-300: #0A3872;
+    --Gray-gray-400: #495049;
+    --Gray-gray-500: #343A40;
+    --Light-blue/light-blue-100: #F3F5FC;
+    --White: #FFFFFF;
+}
+
 * {
-    background: #f3f5fc;
-    font-family: 'inter';
+    background: var(--White);
+    font-family: 'Inter';
     font-weight: 400;
     font-size: 32px;
     line-height: 150%;

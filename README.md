@@ -39,3 +39,5 @@
 - Include exclamation icon unto assets folder
 
 - Flexbox updates
+
+- Update and create global colors css
