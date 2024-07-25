@@ -9,31 +9,50 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <title>Encryption & Decryption Challenge</title>
-
 </head>
 <body>
+<!-- Header -->
+
     <header>
         <img class="logo" src="/assets/Logo.png" alt="Logo Alura">
     </header>
+
+    <!-- Main -->
+    
         <main>
             <section>
-                <textarea class="text-area" cols="30" rows="10" placeholder="insert Text Here">Insert Text Here</textarea>
+                <textarea class="text-area" cols="30" rows="10" placeholder="Insert Text Here">Insert Text Here</textarea>
             
                 <div class="icon-information">
-                    <span class="icon"><img src="/assets/icon.png"></span>
+                    <img class="icon"src="/assets/icon.png">
                     <h6 class="information">Only lower case and without accents</h6>
                 </div>
             <div class="buttons">
                 <button class="encryptionBtn">Encryption</button>
                 <button class="decryptionBtn">Decryption</button>
             </div>
-        </section>
-        <section>
-            <textarea class="message" cols="30" rows="10"></textarea>
-            <div>
-                <button class="copy">Copy</button>
+            </section>
+        <section class="card">
+            <div class="card-container">
+                <img class="img-muñeco" src="/assets/Muñeco.png" alt="Image Muñeco">
+                <p class="text-one">No message found</p>
+                <p class="text-two">Insert text here to Encryption or Decryption</p>  
             </div>
+            <textarea class="evaluate" name="message" readonly></textarea>
+            <button class="copyBtn" type="submit">Copy</button>
         </section>
     </main>
+<!-- Footer -->
+
+    <footer>
+        <p class="Copyright">&copy; Copyright 2024 - Text Encryption - Develop by erbonilla</p>
+        <a href="#" rel="">
+            <img class="Linked" src="/assets/linkedin.png" alt="Logo linkedin">
+        </a>
+        <a href="#" rel="">
+            <img class="Git" src="/assets/linkedin.png" alt="Logo Github">
+        </a>
+    </footer>
+
 </body>
 </html>

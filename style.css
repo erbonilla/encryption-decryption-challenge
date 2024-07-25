@@ -1,34 +1,62 @@
 /* -----------------------
 Fonts 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 ----------------------- */ 
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 /* -----------------------
 Global CSS 
 ----------------------- */ 
 
 :root{
-    --Dark-blue-dark-blue-300: #0A3872;
+    --Dark-blue-dark-blue-300: #0A3871;
     --Gray-gray-400: #495049;
     --Gray-gray-500: #343A40;
     --Light-blue/light-blue-100: #F3F5FC;
     --White: #FFFFFF;
+
+    --font-inter: 'Inter';
 }
 
 * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     background: var(--White);
-    font-family: 'Inter';
+    font-family: var(--font-inter)
+    text-decoration: none;
     font-weight: 400;
     font-size: 32px;
     line-height: 150%;
-    overflow-y: hidden;
+}
+
+body{
+    height: 100%;
+}
+
+img{
+    height: 100%;
+}
+
+/* -----------------------
+Header
+----------------------- */ 
+
+header{
+    position: absolute;
+    margin: 40px 0px 0px 40px;
 }
 
 .logo{
+    display: flex;
+    align-items: flex-start;
     padding-top: 10px;
     margin-left: 10px;
-    width: 8%;
 }
+
+/* -----------------------
+Main
+----------------------- */ 
 
 main {
     display: flex;
@@ -37,16 +65,33 @@ main {
 }
 
 .text-area{
+    width: 660px;
+    height: 288px;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 48px;
+    outline: none;
     border: none;
-    color: #0a3871;
-    margin-top: 90px;
+    color: var(--Dark-blue-dark-blue-300);
+
     text-transform: lowercase;
 }
- 
+
 ::placeholder { 
-    color: #0a3871;}
+    color: var(--Dark-blue-dark-blue-300);}
     .text-area:focus {
         outline: none;
+    }
+
+    .information {
+        width: 100%;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 150%;
+        opacity: 0.8;
+        color: var(--Gray-gray-500);
+        font-size: 18px;
     }
 
 .message {
@@ -68,39 +113,55 @@ main {
 
 .icon-information{
     display: flex;
+    flex-direction: row;
     align-items: center;
+    padding: 0;
+    gap: 8px;
+    position: absolute;
+    top: 500px;
 }
 
 .icon{
     margin-right: 12px;
 }
 
-
 .buttons{
     display: flex;
-    margin-top: 18px;
-    margin-bottom: 18px;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 8px;
+    position: absolute;
+    top: 526px;
 }
 
 .encryptionBtn {
-    background-color: #0a3871;
-    border: 1px solid #0a3871;
-    border-radius: 24px;
-    color: white;
-    cursor: pointer;
-    height: 67px;
     width: 328px;
+    height: 67px;
+    padding: 24px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: var(--White);
+    background-color: var(--Dark-blue-dark-blue-300);
+    border-radius: 24px;
+    cursor: pointer;  
 }
 
 .decryptionBtn {
-    background-color: #d8dfe8;
-    border: 1px solid #0a3871;
-    border-radius: 24px;
-    color: #0a3871;
-    cursor: pointer;
-    height: 67px;
-    margin-left: 30px;
     width: 328px;
+    height: 67px;
+    padding: 24px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: var(--Dark-blue-dark-blue-300);
+    background: var(--Light-blue);
+    border-radius: 24px;
+    cursor: pointer;
 }
 
 .copy {
@@ -115,10 +176,7 @@ main {
     width: 336px;
 }
 
-.information {
-    color: #495057;
-    font-size: 18px;
-}
+
 
 
 
