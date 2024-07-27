@@ -9,21 +9,23 @@ Global CSS
 ----------------------- */ 
 
 :root{
-    --Dark-blue-dark-blue-300: #0A3871;
-    --Gray-gray-400: #495049;
-    --Gray-gray-500: #343A40;
-    --Light-blue/light-blue-100: #F3F5FC;
+    --font-color: #E5E5E5;
     --White: #FFFFFF;
-
-    --font-inter: 'Inter' sans-serif;
+    --Dark-blue-dark-blue-300: #0A3871;
+    --Greey: #C5C5C5;
+    --Medium-grey: #67808E;
+    --RGBA:rgba(0,0,0,0.08);
+    --White-Blue:#D8DFE8;
+    --Medium-Blue:#0A38718A;
+    --Gray:#343A40;
+    --Gree:#495057;    
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: var(--White);
-    font-family: var(--font-inter);
+    font-family: 'Inter', sans-serif;
     text-decoration: none;
     background: var(--White);
 }
@@ -64,7 +66,7 @@ Main
 main{
     display: flex;
     flex-direction: row;
-    background: url(/imagenes/portada.png);
+    background: url(/imagenes/portada.png) no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -82,7 +84,7 @@ main{
     font-size: 32px;
     line-height: 48px;
     outline: none;
-    border: 1px solid var(--Gray-gray-500);
+    border: 1px solid var(--Greey);
     border-radius: 15px;
     resize: none;
 }
@@ -133,7 +135,14 @@ main{
         background: var(--Dark-blue-dark-blue-300);
         border: 1px solid var(--Dark-blue-dark-blue-300);
         border-radius: 24px;
-        cursor: pointer;  
+        cursor: pointer;
+        box-shadow: 0px 20px 29px -5px var(--RGBA);
+    }
+
+    .btn-encriptar:active{
+        box-shadow: inset 2px 2px 4px var(--Font),
+        inset -3px -4px 8px var(--Dark-Blue);
+        color: var(--White-Blue);
     }
     
     .btn-desencriptar {
@@ -150,15 +159,21 @@ main{
         border: 1px solid var(--Dark-blue-dark-blue-300);
         border-radius: 24px;
         cursor: pointer;
+        box-shadow: 0px 20px 29px -5px var(--RGBA); 
     }
 
-
+    .btn-copiar:active,
+    .btn-desencriptar:active{
+    box-shadow: inset 2px 2px 4px var(--Dark-Blue),
+    inset -3px -4px 8px var(--Font);
+    color: var(--Medium-Blue);
+}
 
     .tarjeta{
         width: 270px;
         height: 580px;
-        background: var(--Light-blue);
-        box-shadow: 10px 24px 32px -8px var(--Gray-gray-400);
+        background: var(--font-color)
+        box-shadow: 10px 24px 32px -8px var(--Gray);
         position: relative;
         margin-top: 40px;
         border-radius: 32px;
@@ -169,11 +184,11 @@ main{
         width: 250px;
         margin: auto;
         margin-top: 50%;
-        background: var(--Light-blue);
+        background: var(--font-color);
     }
     
     .img-muñeco{
-        background: var(--White);
+        background: var(--font-color);
     }
     
     .texto-uno{
@@ -182,8 +197,8 @@ main{
         font-size: 18px;
         line-height: 120%;
         text-align: center;
-        color: var(--Gray-gray-400);
-        background-color: var(--Light-blue);
+        color: var(--Gray);
+        background: var(--font-color);
     }
     
     .texto-dos{
@@ -192,8 +207,8 @@ main{
         font-size: 12px;
         line-height: 150%;
         text-align: center;
-        color: var(--Gray-gray-400);
-        background-color: var(--Light-blue);
+        color: var(--Medium-grey);
+        background-color: var(--font-color);
     }
     
     .evaluar{
@@ -236,6 +251,12 @@ main{
         cursor: pointer;
     }
 
+    .btn-encriptar:hover,
+    .btn-desencriptar:hover,
+    .btn-copiar:hover{
+        transform: scale(0.97);
+    }
+
 /* -----------------------
 Footer 
 ----------------------- */ 
@@ -243,13 +264,13 @@ Footer
 footer{
     margin-top: 15px;
     padding: 10px;
-    border-top: 2px solid var(--White);
-    color: var(--Gray-gray-400);
+    border-top: 2px solid var(--font-color);
+    color: var(--Gray);
     text-align: center;
     height: 5px;
     font-size: 20px;
     font-weight: 700;
-    color: var(--Gray-gray-500);
+    color: var(--Gray);
 }
 
 .linked:hover{
@@ -262,6 +283,99 @@ footer{
     opacity: 0.8;
 }
 
+/*---------------
+Media
+----------------*/
+
+@media(max-width: 1250px){
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .encriptador{
+        margin: 168px 0px 0px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .encriptador-contenedor{
+        display: flex;
+        align-items: center;
+        position: inherit;
+    }
+
+    .encriptador-aviso{
+        position: inherit;
+        margin: 15px;
+    }   
+    
+    .tarjeta{
+        width: 665px;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .tarjeta-contenedor{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        position: absolute;
+        bottom: 20%;
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    .img-muñeco{
+        display: none;
+    }
+
+    .btn-copiar{
+        position: inherit;
+        width: 100%;
+    }
+
+    .evaluar{
+        width: 100%;
+        height: 210px;
+        padding: 10px;
+    }
+}
+
+
+@media(max-width: 720px){
+    
+    header .logo{
+        width: 100%;
+        background: var(--White);
+        padding: 2px;
+    }
+
+    .encriptar{
+        width:  90%;
+        font-size: 24px;
+    }
+
+    .encriptador-contenedor{
+        display: grid;
+        gap: 21px;
+    }
+
+    .tarjeta{
+        width: 90%;
+    }
+
+    .copyright{
+        font-size: 20px;
+    }
+}
 
 
 
