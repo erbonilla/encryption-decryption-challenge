@@ -45,3 +45,5 @@
 - Include Linkedin Github icons to assets folder 
 
 - Updated 8 images
+
+- Update HTML and CSS

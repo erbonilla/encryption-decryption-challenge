@@ -15,7 +15,7 @@ Global CSS
     --Light-blue/light-blue-100: #F3F5FC;
     --White: #FFFFFF;
 
-    --font-inter: 'Inter';
+    --font-inter: 'Inter' sans-serif;
 }
 
 * {
@@ -23,11 +23,9 @@ Global CSS
     padding: 0;
     box-sizing: border-box;
     background: var(--White);
-    font-family: var(--font-inter)
+    font-family: var(--font-inter);
     text-decoration: none;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 150%;
+    background: var(--White);
 }
 
 ::selection{
@@ -40,7 +38,7 @@ body{
 }
 
 img{
-    height: 100%;
+    max-width: 100%;
 }
 
 /* -----------------------
@@ -66,17 +64,18 @@ Main
 main{
     display: flex;
     flex-direction: row;
+    background: url(/imagenes/portada.png);
     background-size: cover;
     background-position: center;
 }
 
-.encryptor{
+.encriptador{
     width: 60%;
     margin: 168px 0px 0px 140px;
     background: transparent;
 }
 
-.encrypts{
+.encriptar{
     width: 660px;
     height: 288px;
     font-weight: 400;
@@ -88,11 +87,11 @@ main{
     resize: none;
 }
 
-..encrypts::placeholder,:focus{
+.encriptar::placeholder,:focus{
     color: var(--Dark-blue-dark-blue-300); 
     }
 
-.encryptor-Information{
+.encriptador-aviso{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -101,7 +100,8 @@ main{
     position: absolute;
     top: 500px;
 }
-    .text-information {
+
+.texto-aviso{
         width: 100%;
         font-style: normal;
         font-weight: 400;
@@ -109,10 +109,9 @@ main{
         line-height: 150%;
         opacity: 0.8;
         color: var(--Gray-gray-500);
-        font-size: 18px;
     }
 
-    .buttons{
+    .encriptador-contenedor{
         display: flex;
         flex-direction: row;
         align-items: flex-start;
@@ -121,7 +120,7 @@ main{
         top: 526px;
     }
     
-    .encryptionBtn {
+    .btn-encriptar{
         width: 328px;
         height: 67px;
         padding: 24px;
@@ -131,12 +130,13 @@ main{
         line-height: 19px;
         text-align: center;
         color: var(--White);
-        background-color: var(--Dark-blue-dark-blue-300);
+        background: var(--Dark-blue-dark-blue-300);
+        border: 1px solid var(--Dark-blue-dark-blue-300);
         border-radius: 24px;
         cursor: pointer;  
     }
     
-    .decryptionBtn {
+    .btn-desencriptar {
         width: 328px;
         height: 67px;
         padding: 24px;
@@ -147,13 +147,14 @@ main{
         text-align: center;
         color: var(--Dark-blue-dark-blue-300);
         background: var(--Light-blue);
+        border: 1px solid var(--Dark-blue-dark-blue-300);
         border-radius: 24px;
         cursor: pointer;
     }
 
 
 
-    .card{
+    .tarjeta{
         width: 270px;
         height: 580px;
         background: var(--Light-blue);
@@ -164,7 +165,7 @@ main{
         text-align: center;
     }
     
-    .card-container{
+    .tarjeta-contenedor{
         width: 250px;
         margin: auto;
         margin-top: 50%;
@@ -175,7 +176,7 @@ main{
         background: var(--White);
     }
     
-    .text-one{
+    .texto-uno{
         font-style: normal;
         font-weight: 700;
         font-size: 18px;
@@ -185,7 +186,7 @@ main{
         background-color: var(--Light-blue);
     }
     
-    .text-two{
+    .texto-dos{
         font-style: normal;
         font-weight: 400;
         font-size: 12px;
@@ -195,7 +196,7 @@ main{
         background-color: var(--Light-blue);
     }
     
-    .evaluate{
+    .evaluar{
         width: 100%;
         height: 485px;
         position: absolute;
@@ -213,11 +214,11 @@ main{
         resize: none;
     }
     
-    .evaluate:focus{
+    .evaluar:focus{
         outline: none;
     }
     
-    .copyBtn{
+    .btn-copiar{
         width: 224px;
         height: 67px;
         margin: 23px;
@@ -249,6 +250,16 @@ footer{
     font-size: 20px;
     font-weight: 700;
     color: var(--Gray-gray-500);
+}
+
+.linked:hover{
+    color: var(--Light-blue);
+    opacity: 0.8;
+}
+
+.git:hover:hover{
+    color: var(--Light-blue);
+    opacity: 0.8;
 }
 
 
