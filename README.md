@@ -47,3 +47,5 @@
 - Updated 8 images
 
 - Update HTML and CSS
+
+- Updated and corrected index.html, style.css, images

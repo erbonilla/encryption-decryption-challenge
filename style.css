@@ -55,9 +55,10 @@ header{
 header .logo{
     display: flex;
     align-items: flex-start;
-    padding-top: 120px;
-    margin-left: 48px;
+        width: 120px;
+        height: 48px;
 }
+
 
 /* -----------------------
 Main
@@ -66,7 +67,7 @@ Main
 main{
     display: flex;
     flex-direction: row;
-    background: url(/imagenes/portada.png) no-repeat;
+    background: url(../imagenes/portada.png) no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -81,7 +82,7 @@ main{
     width: 660px;
     height: 288px;
     font-weight: 400;
-    font-size: 32px;
+    font-size: 24px;
     line-height: 48px;
     outline: none;
     border: 1px solid var(--Greey);
@@ -91,7 +92,7 @@ main{
 
 .encriptar::placeholder,:focus{
     color: var(--Dark-blue-dark-blue-300); 
-    }
+}
 
 .encriptador-aviso{
     display: flex;
@@ -110,10 +111,10 @@ main{
         font-size: 18px;
         line-height: 150%;
         opacity: 0.8;
-        color: var(--Gray-gray-500);
+        color: var(--Medium-grey);
     }
 
-    .encriptador-contenedor{
+.encriptador-contenedor{
         display: flex;
         flex-direction: row;
         align-items: flex-start;
@@ -140,7 +141,7 @@ main{
     }
 
     .btn-encriptar:active{
-        box-shadow: inset 2px 2px 4px var(--Font),
+        box-shadow: inset 2px 2px 4px var(--Font);
         inset -3px -4px 8px var(--Dark-Blue);
         color: var(--White-Blue);
     }
@@ -164,7 +165,7 @@ main{
 
     .btn-copiar:active,
     .btn-desencriptar:active{
-    box-shadow: inset 2px 2px 4px var(--Dark-Blue),
+    box-shadow: inset 2px 2px 4px var(--Dark-Blue);
     inset -3px -4px 8px var(--Font);
     color: var(--Medium-Blue);
 }
@@ -172,7 +173,7 @@ main{
     .tarjeta{
         width: 270px;
         height: 580px;
-        background: var(--font-color)
+        background: var(--font-color);
         box-shadow: 10px 24px 32px -8px var(--Gray);
         position: relative;
         margin-top: 40px;
@@ -221,7 +222,7 @@ main{
         font-weight: 400;
         font-size: 24px;
         line-height: 36px;
-        color: var(--Gray-gray-400);
+        color: var(--Gree);
         background: transparent;
         border-top-right-radius: 32px;
         border-top-left-radius: 32px;
@@ -268,8 +269,8 @@ footer{
     color: var(--Gray);
     text-align: center;
     height: 5px;
-    font-size: 20px;
-    font-weight: 700;
+    font-size: 16px;
+    font-weight: 400;
     color: var(--Gray);
 }
 
