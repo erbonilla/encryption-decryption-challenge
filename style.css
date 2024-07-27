@@ -30,6 +30,11 @@ Global CSS
     line-height: 150%;
 }
 
+::selection{
+    background: var(--Dark-blue-dark-blue-300);
+    color: var(--White);
+}
+
 body{
     height: 100%;
 }
@@ -58,7 +63,7 @@ header .logo{
 Main
 ----------------------- */ 
 
-main {
+main{
     display: flex;
     flex-direction: row;
     background-size: cover;
@@ -71,8 +76,6 @@ main {
     background: transparent;
 }
 
-
-
 .encrypts{
     width: 660px;
     height: 288px;
@@ -84,7 +87,6 @@ main {
     border-radius: 15px;
     resize: none;
 }
-
 
 ..encrypts::placeholder,:focus{
     color: var(--Dark-blue-dark-blue-300); 
@@ -110,157 +112,128 @@ main {
         font-size: 18px;
     }
 
-.message {
-    background: white;
-    background-image: url("/assets/Muñeco.png");
-    background-repeat: no-repeat;
-    border: none;
-    border-radius: 24px;
-    color: #0a3871;
-    margin-left: 98px;
-    margin-top: 20px;
-    padding-left: 20px;
-    position: fixed;
-}
+    .buttons{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 8px;
+        position: absolute;
+        top: 526px;
+    }
+    
+    .encryptionBtn {
+        width: 328px;
+        height: 67px;
+        padding: 24px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        color: var(--White);
+        background-color: var(--Dark-blue-dark-blue-300);
+        border-radius: 24px;
+        cursor: pointer;  
+    }
+    
+    .decryptionBtn {
+        width: 328px;
+        height: 67px;
+        padding: 24px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        color: var(--Dark-blue-dark-blue-300);
+        background: var(--Light-blue);
+        border-radius: 24px;
+        cursor: pointer;
+    }
 
-.message:focus {
-    outline: none;
-}
 
-.icon-information{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0;
-    gap: 8px;
-    position: absolute;
-    top: 500px;
-}
 
-.icon{
-    margin-right: 12px;
-}
-
-.buttons{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 8px;
-    position: absolute;
-    top: 526px;
-}
-
-.encryptionBtn {
-    width: 328px;
-    height: 67px;
-    padding: 24px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
-    color: var(--White);
-    background-color: var(--Dark-blue-dark-blue-300);
-    border-radius: 24px;
-    cursor: pointer;  
-}
-
-.decryptionBtn {
-    width: 328px;
-    height: 67px;
-    padding: 24px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
-    color: var(--Dark-blue-dark-blue-300);
-    background: var(--Light-blue);
-    border-radius: 24px;
-    cursor: pointer;
-}
-
-.card{
-    width: 270px;
-    height: 580px;
-    background: var(--Light-blue);
-    box-shadow: 10px 24px 32px -8px var(--Gray-gray-400);
-    position: relative;
-    margin-top: 40px;
-    border-radius: 32px;
-    text-align: center;
-}
-
-.card-container{
-    width: 250px;
-    margin: auto;
-    margin-top: 50%;
-    background: var(--Light-blue);
-}
-
-.img-muñeco{
-    background: var(--White);
-}
-
-.text-one{
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 120%;
-    text-align: center;
-    color: var(--Gray-gray-400);
-    background-color: var(--Light-blue);
-}
-
-.text-two{
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 150%;
-    text-align: center;
-    color: var(--Gray-gray-400);
-    background-color: var(--Light-blue);
-}
-
-.evaluate{
-    width: 100%;
-    height: 485px;
-    position: absolute;
-    padding: 20px;
-    top: 0;
-    left: 0;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 36px;
-    color: var(--Gray-gray-400);
-    background: transparent;
-    border-top-right-radius: 32px;
-    border-top-left-radius: 32px;
-    border: none;
-    resize: none;
-}
-
-.evaluate:focus{
-    outline: none;
-}
-
-.copyBtn{
-    width: 224px;
-    height: 67px;
-    margin: 23px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    visibility: hidden;
-    padding: 24px;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
-    background: var(--Light-blue);
-    border: 1px solid var(--Dark-blue-dark-blue-300);
-    border-radius: 20px;
-    cursor: pointer;
-}
+    .card{
+        width: 270px;
+        height: 580px;
+        background: var(--Light-blue);
+        box-shadow: 10px 24px 32px -8px var(--Gray-gray-400);
+        position: relative;
+        margin-top: 40px;
+        border-radius: 32px;
+        text-align: center;
+    }
+    
+    .card-container{
+        width: 250px;
+        margin: auto;
+        margin-top: 50%;
+        background: var(--Light-blue);
+    }
+    
+    .img-muñeco{
+        background: var(--White);
+    }
+    
+    .text-one{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 120%;
+        text-align: center;
+        color: var(--Gray-gray-400);
+        background-color: var(--Light-blue);
+    }
+    
+    .text-two{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 150%;
+        text-align: center;
+        color: var(--Gray-gray-400);
+        background-color: var(--Light-blue);
+    }
+    
+    .evaluate{
+        width: 100%;
+        height: 485px;
+        position: absolute;
+        padding: 20px;
+        top: 0;
+        left: 0;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 36px;
+        color: var(--Gray-gray-400);
+        background: transparent;
+        border-top-right-radius: 32px;
+        border-top-left-radius: 32px;
+        border: none;
+        resize: none;
+    }
+    
+    .evaluate:focus{
+        outline: none;
+    }
+    
+    .copyBtn{
+        width: 224px;
+        height: 67px;
+        margin: 23px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        visibility: hidden;
+        padding: 24px;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        background: var(--Light-blue);
+        border: 1px solid var(--Dark-blue-dark-blue-300);
+        border-radius: 20px;
+        cursor: pointer;
+    }
 
 /* -----------------------
 Footer 

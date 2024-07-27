@@ -43,3 +43,5 @@
 - Update and create global colors css
 
 - Include Linkedin Github icons to assets folder 
+
+- Updated 8 images
