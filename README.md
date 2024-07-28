@@ -52,4 +52,6 @@
 
 - Updade index.html and connect with encriptador.js
 
+- Working on encriptador.js
+
 
