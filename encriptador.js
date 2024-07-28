@@ -1,4 +1,3 @@
-console.log("executing")
 //------Selector de Elementos---------//
 
 const btnEncriptar = document.querySelector(".btn-encriptar");
