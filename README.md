@@ -49,3 +49,7 @@
 - Update HTML and CSS
 
 - Updated and corrected index.html, style.css, images
+
+- Updade index.html and connect with encriptador.js
+
+
