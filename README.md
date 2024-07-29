@@ -56,4 +56,6 @@
 
 - Updating encriptador.js
 
+- Working on encriptador.js
+
 
