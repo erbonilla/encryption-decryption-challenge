@@ -108,3 +108,11 @@ btnDesencriptar.addEventListener("click", e=>{
             contenido.remove();
     }
 });
+
+//---------Boton de Copiar----------//
+btnCopiar.addEventListener("click", e=>{
+    e.preventDefault();
+    let copiar = respuesta;
+    copiar.select();
+    document.execCommand("copy");
+});
