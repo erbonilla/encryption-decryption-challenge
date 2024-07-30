@@ -60,4 +60,6 @@
 
 - Updating encriptador.js
 
+- Deleted additional folder assets
+
 
