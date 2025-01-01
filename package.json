@@ -1,0 +1,14 @@
+{
+  "name": "encryption-decryption-challenge-main",
+  "version": "1.0.0",
+  "description": "<h1>Encryption & Decryption Challenge</h1>",
+  "main": "encriptador.js",
+  "scripts": {
+    "start": "npx http-server",
+    "build": "cp -r index.html style.css encriptador.js imagenes/ dist/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
